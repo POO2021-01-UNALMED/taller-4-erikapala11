@@ -2,16 +2,15 @@ package classroom;
 
 public class Grupo {
 
-    private static final int cantidadEstudiantes = 0;
 	Persona[] estudiantes;
     Persona profesor;
     Asignatura asignatura;
     int codigo = 0;
     String horario;
-    static Persona[] personas = new Persona[cantidadEstudiantes];
+    Persona[] personas;
 
-    Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
-        this.estudiantes = estudiantes;
+    Grupo(Persona[] estudiantes1, Persona profesor, Asignatura asignatura, int codigo, String horario) {
+        this.estudiantes = estudiantes1;
         this.profesor = profesor;
         this.asignatura = asignatura;
         this.codigo = codigo;
@@ -19,7 +18,12 @@ public class Grupo {
     }
 
     Grupo(Persona[] personas, int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
-    	this(personas, profesor, asignatura, codigo, horario);
+    	this.personas= personas;
+    	this.profesor=profesor;
+    	this.asignatura=asignatura;
+    	this.codigo= codigo;
+    	this.horario= horario;
+    	
         
     }
 

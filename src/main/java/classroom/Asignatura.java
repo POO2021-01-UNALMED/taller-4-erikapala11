@@ -9,15 +9,14 @@ public class Asignatura {
 
     Asignatura() {
         this("Sin nombre");
-        this(0);
     }
 
     Asignatura(int codigoInterno) {
-        this("Sin nombre", codigoInterno, 0);
+        this.codigoInterno =codigoInterno;
     }
 
-    Asignatura(int codigoExterno) {
-        this("Sin nombre", 0, codigoExterno);
+    void Asignatura1(int codigoExterno) {
+        this.codigoExterno= codigoExterno;
     }
 
     Asignatura(String nombre) {
@@ -40,7 +39,7 @@ public class Asignatura {
         this.codigoInterno = codigoInterno;
     }
 
-    void cambiarDatos(int codigoExterno) {
+    void cambiarDatos1(int codigoExterno) {
         this.codigoExterno = codigoExterno;
     }
 
